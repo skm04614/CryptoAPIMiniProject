@@ -1,0 +1,10 @@
+services:
+  superix-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: superix-app
+    ports:
+      - "8443:8443"
+    volumes:
+      - ./data:/superix/data
